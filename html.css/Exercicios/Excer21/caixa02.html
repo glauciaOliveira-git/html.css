@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blanchedalmond;
+
+        }
+
+        header{
+            background-color: rgba(86, 194, 158, 0.677);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(207, 228, 228);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.281);
+
+        }
+
+        nav>a{
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            margin-right: 5px
+
+        }
+
+        nav>a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.4)
+        }
+        article{
+            background-color: blue;
+            padding: 5px;
+        }
+
+        article>aside{
+            background-color: gainsboro;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 4px;
+        }
+        footer>p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <main>
+       <h1>Meu site</h1>
+
+       <nav>
+        <a href="#">link1</a>
+        <a href="#">link2</a>
+        <a href="#">link3</a>
+        <a href="#">link4</a>
+        <a href="#">link5</a>
+        
+       </nav>
+    </header>
+    <section id="Assunto">
+        <p>Esportes</p>
+    </section>
+    <section id="Notícias">
+
+    </section>
+    <article>
+        <h2>Noticias sobre o Brasil</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quia temporibus optio necessitatibus quaerat vel officia iste cumque non nobis laboriosam nemo itaque, laudantium facere, fugiat doloribus debitis repudiandae saepe!</p>
+        <aside>
+            <p>Artigo escrito por José da Silva</p>
+        </aside>
+    </article>
+    </main>
+    <footer>
+        <p>Desenvolvido por curso em vídeo</p>
+    </footer>
+    
+</body>
+</html>
