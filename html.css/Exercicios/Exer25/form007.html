@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomrulários</title>
+</head>
+<body>
+
+    <h1>Exemplo de Formulários</h1>
+
+    <form action="cadastro.php" method="get">
+
+        <p>
+            <label for="iestado">Estados do Brasil</label>
+            <select name="Estado" id="iestado">
+                <option value="">--Escolha uma opção--</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="ES">Espírito Santo</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="CE">Ceará</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="PR">Paraíba</option>
+                </optgroup>
+        </p>
+
+
+        </select>
+
+        <p>
+            
+                <label for="iprof">Profissões</label>
+                <input type="text" name="profissão" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="Programadora"></option>
+                    <option value="Professora"></option>
+                    <option value="Gestora"></option>
+                    <option value="Faxineira"></option>
+                    <option value="Empreendedora"></option>
+                    <option value="Artesã"></option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imensg">Descreva a profissão escolhida acima:</label><br>
+            <textarea name="opinião" id="imensg" cols="30" rows="10"></textarea>
+        
+        </p>
+
+
+
+
+
+
+<p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</p>
+
+
+    </form>
+    
+</body>
+</html>
