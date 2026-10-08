@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/*versão todas as midias*/
+
+/* Small phones	up to 480px
+Phones / large phones	481px - 767px
+Tablets (portrait)	768px - 1023px
+Laptops / small desktops	1024px - 1279px
+Large desktops	1280px and up   */
+
+@media print{
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        
+        background-image: url(../imagens/back-print.jpg);
+    
+    }
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita no curso de HTML e CSS que estou fazerndo no Curso em vídeo';
+        text-decoration: overline;
+
+    }
+    main, h1{
+        color: black;
+        text-shadow: none;
+
+    }
+        img#phone{display: none;}
+        img#tablet{display: none;}
+        img#print{display: block;}
+        img#pc{display: none;}
+        img#tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+ body{
+    background-image: url(../imagens/back-tablet.jpg);
+        
+ }
+        img#phone{display: none;}
+        img#tablet{display: block;}
+        img#print{display: none;}
+        img#pc{display: none;}
+        img#tv{display: none;}
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+     img#phone{display: none;}
+        img#tablet{display: none;}
+        img#print{display: none;}
+        img#pc{display: block;}
+        img#tv{display: none;} 
+}
+
+@media screen and (min-width: 1280px){
+body{
+    background-image: url(../imagens/back-tv.jpg);
+}
+        img#phone{display: none;}
+        img#tablet{display: none;}
+        img#print{display: none;}
+        img#pc{display: none;}
+        img#tv{display: block;}  
+}
