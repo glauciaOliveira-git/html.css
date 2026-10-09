@@ -9,7 +9,10 @@ html, body{
 }
 
 header{
+
 background-color: gray;
+text-align: center;
+
 
 
 }
@@ -33,6 +36,9 @@ span#burguer:hover{
 
 menu, ul{
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 menu{
     display: none;
@@ -43,6 +49,7 @@ ul{
 }
 menu > ul > li > a{
 display: block;
+width: 100%;
 text-align: center;
 text-decoration: none;
 padding: 10px;
