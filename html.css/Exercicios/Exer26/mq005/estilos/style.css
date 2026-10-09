@@ -31,7 +31,7 @@ span#burguer:hover{
     background-color: white;
 }
 
-menu{
+menu, ul{
     list-style-type: none;
 }
 menu{
